@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,37 +10,42 @@
     <link rel="stylesheet" href="styles/bookVenue.css">
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <style>
-        
+
     </style>
 </head>
+
 <body>
     <div id="navbar" style="margin-bottom: 15px;">
         <div id="explorenavbar">
 
-            <div id="logodiv" >
-                <img id="logo" src="https://playo-website.imgix.net/company/logo1.png?auto=compress,format" alt="playo logo">
+            <div id="logodiv">
+                <img id="logo" src="https://playo-website.imgix.net/company/logo1.png?auto=compress,format"
+                    alt="playo logo">
             </div>
-    
-            <div id="nav2div"> 
-                <img id="pplogo" src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" alt="">
+
+            <div id="nav2div">
+                <img id="pplogo" src="https://cdn-icons-png.flaticon.com/512/7699/7699141.png" alt="">
                 <p id="myBtn" class="loginp">Login/Signup</p>
-                <img id="dropdownarrow" src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg" alt="arrow">
+                <img id="dropdownarrow" src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg"
+                    alt="arrow">
             </div>
-    
-           
-    
+
+
+
             <!--    popupwindow -->
             <div id="modal_container" style="z-index: 5;">
-    
+
                 <div id="modal">
-                    <img id="close" src="https://playo-website.gumlet.net/playo_functional/Icons/closeButton.svg" alt="">
-    
-                    <div id="login_left_div">
-                        <img width="100%" src="https://playo-website.gumlet.net/icons/login-graphics.png?auto=compress,format" alt="">
+                    <img id="close" src="https://playo-website.gumlet.net/playo_functional/Icons/closeButton.svg"
+                        alt="">
+
+https://playo.co/_next/image?url=https%3A%2F%2Fplayo-website.gumlet.io%2Ficons%2Flogin-graphics.png%3Fauto%3Dcompress%2Cformat&w=384&q=75                    <div id="login_left_div">
+                        <img width="100%"
+                            src="" alt="">
                     </div>
                     <div id="login_right_div">
                         <p id="entermobile">Enter Your Mobile Number</p>
-    
+
                         <div id="user_phone_div">
                             <div>
                                 <div id="countrySpan">
@@ -47,7 +53,9 @@
                                         <div id="selectCallingCode">
                                             <span style="font-size: 14px; color: #424242;" id="rem1">IND</span>
                                             <span style="font-size: 14px; color: #424242;" id="rem2">+91</span>
-                                            <img id="countryDrop" src="https://s3.ap-south-1.amazonaws.com/playo-website/booking/selectCountry.svg" alt="dropdown">
+                                            <img id="countryDrop"
+                                                src="https://s3.ap-south-1.amazonaws.com/playo-website/booking/selectCountry.svg"
+                                                alt="dropdown">
                                         </div>
                                     </span>
                                 </div>
@@ -56,15 +64,15 @@
                                 <input id="input" type="number" placeholder="Mobile Number *" value="">
                                 <hr style="margin-top: -1px; margin-left: -65%; width: 220%;">
                             </span>
-                            
+
                         </div>
-    
+
                         <button id="sendOTP" style="font-size: 1em;">SEND OTP</button>
-                        <button id="giveOTP"  style="font-size: 1em;" >Enter OTP</button>
+                        <button id="giveOTP" style="font-size: 1em;">Enter OTP</button>
                     </div>
                 </div>
             </div>
-    
+
         </div>
 
     </div>
@@ -80,8 +88,9 @@
             <!-- these div for sport selection -->
             <div id="selectsport">
                 <p class="alltitles">SELECT SPORT</p>
-                <div id="sportlogodiv" onclick= "sportlogo()">
-                    <img id="sportlogo" src="https://d3qokvektr0ozw.cloudfront.net/SPORTICONS/SP2/ic_football_grey.png" width="52%" height="60%">
+                <div id="sportlogodiv" onclick="sportlogo()">
+                    <img id="sportlogo" src="https://playo.co/_next/image?url=https%3A%2F%2Fplayo.gumlet.io%2FV3SPORTICONS%2FSP6.png&w=48&q=75"
+                        width="52%" height="60%">
                     <p id="onlogoname"></p>
                 </div>
             </div>
@@ -90,14 +99,38 @@
             <div id="dateselection">
                 <p class="alltitles">SELECT DATE</p>
                 <div id="dateandday">
-                    <div id="day1" class="dayanddate" onclick="day1()"><p id="d1" class="dayname">Today </p><p id="m1" class="dayname">22, Jan</p></div>
-                    <div id="day2" class="dayanddate" onclick="day2()"><p id="d2" class="dayname">Tomorrow</p><p id="m2" class="dayname">23, Jan</p></div>
-                    <div id="day3" class="dayanddate" onclick="day3()"><p id="d3" class="dayname">Monday</p><p id="m3" class="dayname">24, Jan</p></div>
-                    <div id="day4" class="dayanddate" onclick="day4()"><p id="d4" class="dayname">Tuesday</p><p id="m4" class="dayname">25, Jan</p></div>
-                    <div id="day5" class="dayanddate" onclick="day5()"><p id="d5" class="dayname">Wednesday</p><p id="m5" class="dayname">26, Jan</p></div>
-                    <div id="day6" class="dayanddate" onclick="day6()"><p id="d6" class="dayname">Thursday</p><p id="m6" class="dayname">27, Jan</p></div>
-                    <div id="day7" class="dayanddate" onclick="day7()"><p id="d7" class="dayname">Friday</p><p id="m7" class="dayname">28, Jan</p></div>
-                    <div id="day8" class="dayanddate" onclick="day8()"><p id="d8" class="dayname">Saturday</p><p id="m8" class="dayname">29, Jan</p></div>
+                    <div id="day1" class="dayanddate" onclick="day1()">
+                        <p id="d1" class="dayname">Today </p>
+                        <p id="m1" class="dayname">22, Jan</p>
+                    </div>
+                    <div id="day2" class="dayanddate" onclick="day2()">
+                        <p id="d2" class="dayname">Tomorrow</p>
+                        <p id="m2" class="dayname">23, Jan</p>
+                    </div>
+                    <div id="day3" class="dayanddate" onclick="day3()">
+                        <p id="d3" class="dayname">Monday</p>
+                        <p id="m3" class="dayname">24, Jan</p>
+                    </div>
+                    <div id="day4" class="dayanddate" onclick="day4()">
+                        <p id="d4" class="dayname">Tuesday</p>
+                        <p id="m4" class="dayname">25, Jan</p>
+                    </div>
+                    <div id="day5" class="dayanddate" onclick="day5()">
+                        <p id="d5" class="dayname">Wednesday</p>
+                        <p id="m5" class="dayname">26, Jan</p>
+                    </div>
+                    <div id="day6" class="dayanddate" onclick="day6()">
+                        <p id="d6" class="dayname">Thursday</p>
+                        <p id="m6" class="dayname">27, Jan</p>
+                    </div>
+                    <div id="day7" class="dayanddate" onclick="day7()">
+                        <p id="d7" class="dayname">Friday</p>
+                        <p id="m7" class="dayname">28, Jan</p>
+                    </div>
+                    <div id="day8" class="dayanddate" onclick="day8()">
+                        <p id="d8" class="dayname">Saturday</p>
+                        <p id="m8" class="dayname">29, Jan</p>
+                    </div>
                 </div>
             </div>
 
@@ -157,88 +190,50 @@
                     <div id="court7" class="courtnames" onclick="court7()">9 a Side Court 1</div>
                 </div>
             </div>
-            
+
             <!-- these div for show total cost -->
             <div id="cost">Total cost for these booking - INR 2200</div>
-             
+
             <!-- these div is for buttons -->
-             <div id="twobuttons">
+            <div id="twobuttons">
                 <button id="btn1" class="btn" onclick="addtocart()">ADD TO CART</button>
                 <button id="btn2" class="btn">PROCEED</button>
             </div>
-           
+
         </div>
         <!-- these div is for showing the cart -->
         <div id="addtocart">
             <div id="mycart" class="alltitles">MY CART (0)</div>
             <div id="emptycart">
-                <img id="emptyimage" src="https://s3.ap-south-1.amazonaws.com/playo-website/icons/empty-cart.svg" width="40%" height="30%" >
+                <img id="emptyimage" src="https://s3.ap-south-1.amazonaws.com/playo-website/icons/empty-cart.svg"
+                    width="40%" height="30%">
                 <p id="emptymessege" class="alltitles">Your Shopping cart is currently Empty</p>
             </div>
         </div>
     </div>
     <div id="footer">
-        <div id="infooter">
-            <div id="div1">
-                <div id="weblogo">
-                    <a href="index.html"><img src="https://playo-website.gumlet.net/logo/playo-logo-footer-website.png?auto=format,compress&h=100" alt="logo" width="100%" height="100%"></a>
-                </div>
-                <div id="playstore">
-                    <a href="https://play.google.com/store/apps/details?id=com.techmash.playo">
-                        <img src="https://playo-website.gumlet.net/icons/download-android.png?auto=format,compress " >
-                    </a>
-                    <a href="https://apps.apple.com/us/app/playo-local-sports-community/id1018786950?ls=1">
-                        <img src="https://playo-website.gumlet.net/icons/download-ios.png?auto=format,compress" >
-                    </a>
-                </div>
-                <div id="copyright">
-                    <p>©2022 TechMash Solutions Private Limited.<span> All Rights Reserved.</span></p>
-                </div>
-                <div id="loweritems">
-                    <a href="faq.html"><p>FAQs</p></a>
-                    <a href=""><p>Privacy POlicy</p></a>
-                    <a href=""><p>Terms Of Service</p></a>
-                    <a href=""><p>Cancellation & Refund Policy</p></a>
-                    <a href=""><p>Careers</p></a>
-                    <a href=""><p id="hiring">We're Hiring!</p></a>
-                </div>
-            </div>
-            <div id="div2">
-                <a href="about.html"><p>About Us</p></a>
-                <a href="partner.html"><p>Partner With Us</p></a>
-                <a href="brandact.html"><p>Brand Activations</p></a>
-                <a href="corporate.html"><p>Corporate Offerings</p></a>
-                <a href="contact.html"><p>contact Us</p></a>
-            </div>
-            <div id="div3">
-                <a href="venues.html"><p>Book Venues</p></a>
-                <a href="activities.html"><p>Activities</p></a>
-                <a href="blog.html"><p>Blog</p></a>
-                <a href="faq.html"><p>FAQ's</p></a>
-            </div>
-            <div id="div4">
-                <a href="https://www.facebook.com/PlayoApp/"><p>Facebook</p></a>
-                <a href="https://twitter.com/playoApp"><p>Twitter</p></a>
-                <a href="https://www.instagram.com/playoapp/"><p>Instagram</p></a>
-                <a href="https://www.linkedin.com/company/playo"><p>LinkdIn</p></a>
-            </div>
-        </div>
+
     </div>
 
-     <!-- need help button div -->
-     <a href="contact.html">
+    <!-- need help button div -->
+    <a href="contact.html">
         <div id="needhelp">
             <p>Need help?</p>
-            <img id="needhelpiconimage" src="https://playo-website.gumlet.net/venues-listing/maximize.svg" width="10%" height="60%">
+            <img id="needhelpiconimage" src="https://playo-website.gumlet.net/venues-listing/maximize.svg" width="10%"
+                height="60%">
         </div>
     </a>
 
 
 
 </body>
+
 </html>
 
-<script src= ./scripts/bookVenue.js >
+<script src=./scripts/bookVenue.js></script>
+<script type="module">
+    import footer from "./components/footer.js"
 
-
+    let container = document.querySelector("#footer");
+    container.innerHTML = footer();
 </script>

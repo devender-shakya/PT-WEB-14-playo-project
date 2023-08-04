@@ -46,6 +46,7 @@
 #leftimage {
   height: 400px;
   width: 100%;
+  margin-left: -65px;
 }
 .orange {
   color: #f35703;
